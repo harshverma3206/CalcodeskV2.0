@@ -1,15 +1,106 @@
+/* ----------Define Global Variables---------- */
+:root {
+
+    /* ----------Colors---------- */
+    --primary-color: #EE0100;
+    --secondary-color: #F34444;
+    --covering-color: #310F11;
+    --spacing-color: #FCE6E6;
+    --hightlight-color: #EDD8D8;
+    --extra-color: #EC565650;
+
+    /* ----------Fonts---------- */
+    --primary-font: "Abril Fatface", serif;
+    --secondary-font: "Unbounded", sans-serif;
+    --filling-font: "Zalando Sans", sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--filling-font);
 }
 
-html, body{
+html,
+body {
     height: 100%;
     width: 100%;
+    background-color: var(--spacing-color);
 }
 
-#page01{
-    /* height: 100vh; */
-    /* width: 100%; */
+#part01 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: yellowgreen; */
+    position: relative;
+}
+
+#part01-txt {
+    /* background-color: lightgreen; */
+    /* height: 55%; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 200px; */
+}
+
+#part01-txt h1 {
+    text-transform: uppercase;
+    align-items: center;
+    color: aliceblue;
+    font-size: 8vw;
+    line-height: .8;
+    letter-spacing: -3px;
+    font-family: var(--primary-font);
+    font-weight: 100;
+}
+
+#part01-txt h1:nth-child(1) {
+    color: var(--primary-color);
+}
+
+#part01-txt h1:nth-child(2) {
+    color: var(--secondary-color);
+}
+
+#part01-txt h5 {
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-family: var(--secondary-font);
+    font-weight: 300;
+}
+
+#part01-img {
+    height: 45%;
+    width: 100%;
+    background-color: var(--hightlight-color);
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* ----------Common Classes----------- */
+.calcodesk-btn01 {
+    background-color: red;
+    cursor: pointer;
+    color: white;
+    min-height: 50px;
+    min-width: 270px;
+    height: 2.5vw;
+    width: 20vw;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.calcodesk-btn01 i {
+    margin-left: 5px;
+    font-size: 1rem;
 }

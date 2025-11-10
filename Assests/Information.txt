@@ -1,0 +1,27 @@
+COLORS
+Primary Color - #EE0100
+Secondary Color - #F34444
+Spacing Color - #FCE6E6
+Covering Color - #310F11
+Highlight Color - #EDD8D8
+Extra Color - #EC565650
+
+
+
+
+FONTS	
+Primary Font - "Abril Fatface", serif;
+Secondary Font - "Unbounded", sans-serif;
+Filling Font - "Zalando Sans", sans-serif;
+
+
+ICONS
+Font Awesome (Classic Solid)
+Arrow  - <i class="fa-solid fa-caret-right"></i>
+Linked In - <i class="fa-brands fa-linkedin"></i>
+G Mail - <i class="fa-solid fa-envelope"></i>
+Instagram  - <i class="fa-brands fa-instagram"></i>
+Bar - <i class="fa-solid fa-bars-staggered"></i>
+
+
+PreConnect – Font Awesome cdnjs.
