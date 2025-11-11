@@ -8,29 +8,49 @@
   <!-- ----------Logo---------- -->
   <link rel="icon" type="image/svg+xml" href="" />
 
-
-  <!-- ---------Main CSS File---------- -->
-  <link rel="stylesheet" href="style.css" />
-
-
-  <!-- ----------Other CSS Files---------- -->
-
   <!-- ----------Font Awesome---------- -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- ----------- Google Fonts ---------- -->
+  <!-- ----------- Google Fonts ---------- -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Unbounded:wght@200..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap"
     rel="stylesheet">
 
+  <!-- ---------Main CSS File---------- -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ----------Other CSS Files---------- -->
+  <link rel="stylesheet" href="/Common CSS Files/navBar.css" />
+
 </head>
 
 <body>
-  <main id="main">
+  <main>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="/Assests/LOGO/4.png"></img>
+        </a>
+
+        <div class="navBar-options" id="menuList" id="menuPart">
+          <a href="index.html" id="itemm">Home</a>
+          <a href="Store.html">Store</a>
+          <a href="Blog.html">Blogs</a>
+          <a href="Services.html">Services</a>
+          <a href="Contant Us.html">Contact Us</a>
+          <span class="clr1"></span>
+        </div>
+
+        <div class="menuIcon">
+          <i class="fa-solid fa-bars-staggered" onclick="toggleMenu()"></i>
+        </div>
+      </nav>
+    </header>
+
     <section id="part01">
       <div id="part01-txt">
         <h1>Calcodesk</h1>
@@ -38,14 +58,43 @@
         <h5>Makes Your World Wide</h5>
         <a class="calcodesk-btn01">Contact Us<i class="fa-solid fa-circle-arrow-right"></i></a>
       </div>
+
       <div id="part01-img">
         <img src="" alt="">
         <img src="" alt="">
         <img src="" alt="">
       </div>
     </section>
+
+    <section id="part02">
+      <article>
+        <img src="#" alt="Image-one">
+        <div id="part02-txt">
+          <h3>Where Idea Meet Digital Excellence</h3>
+          <p> At Calcodesk, we turn your ideas into meaningful digital experiences. Our team blends creativity
+            with smart technology to design stunning visuals and develop responsive websites that truly
+            represent your brand. We don’t just build digital assets — we build lasting impressions that
+            help your business grow online. </p>
+        </div>
+      </article>
+
+      <article>
+        <img src="#" alt="Image-two">
+        <div id="part02-txt">
+          <h3>A Complete Partner for Your Digital Journey</h3>
+          <p> From crafting engaging videos and eye-catching graphics to running high-performing Meta ads and
+            managing social media — <b>Calcodesk</b> covers it all. We focus on strategies that connect with
+            your audience, strengthen your online presence, and bring measurable growth to your business. With
+            us, your brand doesn’t just exist online — it thrive. </p>
+        </div>
+      </article>
+    </section>
   </main>
 </body>
+
+<!-- ----------ThirdParty Script File---------- -->
+
+<!-- ----------Other Script File---------- -->
 
 <!-- ----------Main Script File---------- -->
 <script src="script.js"></script>

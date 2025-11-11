@@ -19,6 +19,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: none;
     font-family: var(--filling-font);
 }
 
@@ -27,31 +28,34 @@ body {
     height: 100%;
     width: 100%;
     background-color: var(--spacing-color);
+    overflow-x: hidden;
 }
 
+/* ----------Navigation Bar---------- */
+
+/* ----------Section01---------- */
 #part01 {
     height: 100vh;
     width: 100%;
-    /* background-color: yellowgreen; */
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 #part01-txt {
-    /* background-color: lightgreen; */
-    /* height: 55%; */
     width: 100%;
+    /* padding-top: 150px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin-top: 200px; */
 }
+
 
 #part01-txt h1 {
     text-transform: uppercase;
     align-items: center;
     color: aliceblue;
-    font-size: 8vw;
+    font-size: clamp(3.9rem, 8vw, 7vw);
     line-height: .8;
     letter-spacing: -3px;
     font-family: var(--primary-font);
@@ -60,6 +64,7 @@ body {
 
 #part01-txt h1:nth-child(1) {
     color: var(--primary-color);
+    margin-top: 8.5rem;
 }
 
 #part01-txt h1:nth-child(2) {
@@ -67,28 +72,44 @@ body {
 }
 
 #part01-txt h5 {
-    font-size: 1.3vw;
+    /* font-size: 1.13vw; */
+      font-size: clamp(.8rem, 1vw, 2vw);
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 1.5rem;
     font-family: var(--secondary-font);
     font-weight: 300;
 }
 
-#part01-img {
-    height: 45%;
-    width: 100%;
-    background-color: var(--hightlight-color);
-    position: absolute;
-    bottom: 0;
+#part01-img{
+    background-color: #310F11;
+    flex-grow: 1;
 }
 
+#part02{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--extra-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#part02 article{
+    background-color: yellowgreen;
+    width: 65%;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
 
 /* ----------Common Classes----------- */
 .calcodesk-btn01 {
     background-color: red;
     cursor: pointer;
     color: white;
-    min-height: 50px;
+    min-height: 40px;
     min-width: 270px;
     height: 2.5vw;
     width: 20vw;
@@ -97,7 +118,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px 0;
+    margin: 2.5rem 0;
+    transition: all ease-in-out .2s;
+}
+
+.calcodesk-btn01:hover {
+    box-shadow: 1px 1px 10px #EE0100;
 }
 
 .calcodesk-btn01 i {
