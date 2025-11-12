@@ -15,7 +15,7 @@
     --filling-font: "Zalando Sans", sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -73,42 +73,98 @@ body {
 
 #part01-txt h5 {
     /* font-size: 1.13vw; */
-      font-size: clamp(.8rem, 1vw, 2vw);
+    font-size: clamp(.8rem, 1vw, 2vw);
     text-transform: uppercase;
     margin-top: 1.5rem;
     font-family: var(--secondary-font);
     font-weight: 300;
 }
 
-#part01-img{
+#part01-img {
     background-color: #310F11;
     flex-grow: 1;
 }
 
-#part02{
+#part02 {
     height: 100vh;
     width: 100%;
-    background-color: var(--extra-color);
+    background-color: var(--spacing-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#part02 article{
-    background-color: yellowgreen;
-    width: 65%;
+#part02 article {
+    /* background-color: yellowgreen; */
+    width: 55%;
     margin: 10px;
     padding: 20px;
+    /* padding: 5vh; */
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+    gap: 40px;
+}
+
+#part02 article:nth-child(1) {
+    margin-top: 10vh;
+    /* background-color: #EE0100; */
+}
+
+#part02 article img {
+    height: 16vw;
+    border-radius: 1vw;
+}
+
+#part02 article div{
+    /* background-color: #F34444; */
+    padding: 20px 20px;
+    text-align: justify;
+}
+
+#part02 article div h3 {
+    font-size: clamp(1rem, 1.7vw, 3rem);
+    margin-bottom: 20px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+}
+
+#part02 article div p {
+    font-size: clamp(.8rem, 2vw, 1.1rem);
+    line-height: 1.5;
+    font-family: var(--filling-font);
+    font-weight: 300;
+}
+
+#part03{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly;    */
+}
+
+#part03 h3{
+    font-size: clamp(2rem, 4vw, 5rem);
+    margin: 2vh 0;   
+    margin-top: 10vh;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+}
+
+#part03 div{
+    overflow: hidden;
+    border: 1px solid black;
+    height: 60vh;
+    width: 70vw;
+    min-width: 370px;
 }
 
 /* ----------Common Classes----------- */
 .calcodesk-btn01 {
     background-color: red;
     cursor: pointer;
-    color: white;
+    color: var(--spacing-color);
     min-height: 40px;
     min-width: 270px;
     height: 2.5vw;
