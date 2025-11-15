@@ -183,7 +183,7 @@ body {
 
 #prt04-moving-brands {
     margin-top: 2vh;
-    width: 75%;
+    width: 95%;
     white-space: nowrap;
     padding: 1vw;
     overflow: hidden;
@@ -228,7 +228,7 @@ body {
 }
 
 #prt04-moving-brands .move img {
-    height: 3.5vw;
+    height: 3vw;
     margin: 0 3vw;
 }
 
@@ -266,7 +266,9 @@ body {
 #part05 {
     height: 100vh;
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4vh;
 }
 
 .testimonial__swiper {
@@ -330,8 +332,7 @@ body {
 }
 
 .swiper-pagination-bullets {
-    bottom: 4rem !important;
-    /* background-color: var(--secondary-color); */
+    bottom: 5.5rem !important;
 }
 
 .swiper-pagination-bullet {
@@ -366,6 +367,95 @@ body {
 .swiper-button-prev i {
     color: var(--spacing-color);
 }
+
+#part06 {
+    height: 100vh;
+    width: 100%;
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#part06 h3 {
+    font-size: var(--font-size-heading);
+    margin: 2vh 0;
+    margin-top: 10vh;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    /* gap: 20vh; */
+}
+
+#prt06-members {
+    width: 1000px;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat( autofill, minmax(200px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-columns: minmax(auto, 100px);
+    grid-gap: 20px;
+    overflow: hidden;
+}
+
+#prt06-members article {
+    background-color: red;
+}
+
+#prt06-members article img {
+    height: 2vh;
+}
+
+#part07 {
+    height: auto;
+    width: 100%;
+    background-color: var(--spacing-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#part07 h3 {
+    font-size: var(--font-size-heading);
+    margin: 2vh 0;
+    margin-top: 10vh;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+}
+
+#prt07-container {
+    margin-top: 2vh;
+    width: 100%;
+    white-space: nowrap;
+    padding: 1vw;
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes move-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.prt07-container-img {
+    display: inline-block;
+    animation: move-left 40s linear infinite;
+}
+
+.prt07-container-img img {
+    border-radius: 1vw;
+    /* width: 32vw; */
+    height: 32vw;
+    min-height: 18rem;
+    margin: 0 1vw;
+}
+
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */

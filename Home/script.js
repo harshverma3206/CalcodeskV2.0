@@ -27,9 +27,9 @@ const swiperTestimonial = new Swiper('.testimonial__swiper', {
         prevEl: '.swiper-button-prev',
     },
 
-    // autoplay: {
-    //     delay:3000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay:3000,
+        disableOnInteraction: false,
+    },
 
 });
