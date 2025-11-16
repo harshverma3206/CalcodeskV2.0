@@ -1,0 +1,183 @@
+/* ----------Define Global Variables---------- */
+:root {
+
+    /* ----------Colors---------- */
+    --primary-color: #EE0100;
+    --primary-color-opacity: #ee0000d4;
+    --primary-color-dark: #e20606;
+    --secondary-color: #F34444;
+    --covering-color: #310F11;
+    --covering-color-opacity: #310f1178;
+    --spacing-color: #FCE6E6;
+    --hightlight-color: #EDD8D8;
+    --extra-color: #EC565650;
+
+    /* ----------Fonts---------- */
+    --primary-font: "Abril Fatface", serif;
+    --secondary-font: "Unbounded", sans-serif;
+    --filling-font: "Zalando Sans", sans-serif;
+
+    /* ----------Font Sizes---------- */
+    --font-size-heading: clamp(2rem, 3vw, 5rem);
+    --font-size-small: 0.8rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    color: var(--covering-color);
+    font-family: var(--filling-font);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--spacing-color);
+    /* background-color: white; */
+    overflow-x: hidden;
+    user-select: none;
+}
+
+/* ----------OverrideCSS---------- */
+.clr1 {
+    left: 74.38%;
+    width: 25.62%;
+}
+
+.calcodesk-btn01 {
+    min-width: 270px;
+    width: 25vw;
+}
+
+#part01 {
+    padding-bottom: 5vh;
+    padding-left: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#part01 article {
+    background-color: var(--hightlight-color);
+    width: clamp(550px, 40vw, 45vw);
+    border-radius: 1.5vw;
+    padding: 2vw;
+    margin-top: 13vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px var(--covering-color-opacity);
+}
+
+#part01 h5 {
+    font-size: var(--font-size-heading);
+    margin: 2vh 0;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+}
+
+#part01 p {
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+form {
+    /* background-color: rgb(231, 113, 113); */
+    margin-top: 40px;
+    animation: fadeIn 1s ease-out;
+    width: clamp(200px, 25vw, 30vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inputGroup {
+    /* background-color: rgb(178, 167, 103); */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.inputField {
+    /* background-color: rgb(67, 179, 162); */
+    position: relative;
+}
+
+.messageField {
+    position: relative;
+}
+
+.inputField i,
+.messageField i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: var(--covering-color);
+    font-size: 1.1rem;
+    opacity: .7;
+}
+
+.messageField i {
+    top: 27px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    background-color: var(--spacing-color);
+    border: 2px solid transparent;
+    border-radius: .5vw;
+    font-size: .9rem;
+    transition: all .3s ease;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    /* border-color: var(--primary-color); */
+    outline: none;
+    box-shadow: 0 0 0 2.5px var(--primary-color-opacity);
+}
+
+.inputField input:focus~i,
+.messageField textarea:focus~i {
+    color: var(--primary-color);
+    opacity: 1;
+}
+
+#nxtBtn {
+    display: inline-block;
+    margin: 0 1rem;
+    margin-top: 13vh;
+}
+
+#nxtBtn i {
+    font-size: 2.5vw;
+    margin-left: 1rem;
+    color: var(--covering-color);
+}

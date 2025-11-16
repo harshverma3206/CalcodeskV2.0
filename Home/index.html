@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Calcodesk-Home</title>
   <!-- ----------Logo---------- -->
-  <link rel="icon" type="image/svg+xml" href="" />
+  <link rel="icon" type="image/svg+xml" href="/Assests/LOGO/svg (4).svg" />
 
   <!-- ----------Font Awesome---------- -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -20,6 +20,8 @@
     href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Unbounded:wght@200..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap"
     rel="stylesheet">
 
+  <!-- ----------Loco Motive CSS File---------- -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 
   <!-- ----------Swiper CSS Files---------- -->
   <link rel="stylesheet" href="/Home/swiper-bundle.min.css" />
@@ -43,15 +45,15 @@
     <header>
       <nav>
         <a href="index.html">
-          <img src="/Assests/LOGO/4.png"></img>
+          <img src="/Assests/LOGO/svg (4).svg"></img>
         </a>
 
         <div class="navBar-options" id="menuList" id="menuPart">
           <a href="index.html" id="itemm">Home</a>
-          <a href="Store.html">Store</a>
-          <a href="Blog.html">Blogs</a>
-          <a href="Services.html">Services</a>
-          <a href="Contant Us.html">Contact Us</a>
+          <a href="/Store/Store.html">Store</a>
+          <a href="/Blogs/blogs.html">Blogs</a>
+          <a href="/Services/services.html">Services</a>
+          <a href="/ContactUs/contact.html">Contact Us</a>
           <span class="clr1"></span>
         </div>
 
@@ -66,7 +68,7 @@
         <h1>Calcodesk</h1>
         <h1>Services</h1>
         <h5>Makes Your World Wide</h5>
-        <a class="calcodesk-btn01">Contact Us<i class="fa-solid fa-circle-arrow-right"></i></a>
+        <a href="/ContactUs/contact.html" class="calcodesk-btn01">Contact Us<i class="fa-solid fa-phone"></i></a>
       </div>
 
       <div id="part01-img">
@@ -108,7 +110,8 @@
         <a href="#"><img src="/Assests/MetaData/graphic-designing.webp" alt="Graphic Desining"></a>
         <a href="#"><img src="/Assests/MetaData/video-editing.webp" alt="Video Editing"></a>
       </div>
-      <a class="calcodesk-btn01">View More<i class="fa-solid fa-circle-arrow-right"></i></a>
+      <a href="/Services/services.html" class="calcodesk-btn01">View More<i
+          class="fa-solid fa-circle-arrow-right"></i></a>
     </section>
 
     <section id="part04">
@@ -361,7 +364,7 @@
 
     <footer>
       <h3>Connect With Us</h3>
-      <article id="ftr-connect">
+      <article class="ftr-connect">
         <a href=""><i class="fa-brands fa-facebook-f"></i></a>
         <a href=""><i class="fa-brands fa-whatsapp"></i></a>
         <a href=""><i class="fa-brands fa-youtube"></i></a>
@@ -376,10 +379,18 @@
   </main>
 </body>
 
+<!-- ----------LocoMotive Script File---------- -->
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
 <!-- ----------ThirdParty Script File---------- -->
 <script src="/Home/swiper-bundle.min.js"></script>
 
 <!-- ----------Other Script File---------- -->
+
+<!-- ----------GSAP Script File---------- -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+  integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
 <!-- ----------Main Script File---------- -->
 <script src="script.js"></script>

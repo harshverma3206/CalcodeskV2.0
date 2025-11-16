@@ -3,6 +3,8 @@
 
     /* ----------Colors---------- */
     --primary-color: #EE0100;
+    --primary-color-opacity: #ee0000d4;
+    --primary-color-dark: #e20606;
     --secondary-color: #F34444;
     --covering-color: #310F11;
     --covering-color-opacity: #310f1178;
@@ -13,7 +15,7 @@
     /* ----------Fonts---------- */
     --primary-font: "Abril Fatface", serif;
     --secondary-font: "Unbounded", sans-serif;
-    --filling-font: "Zalando Sans", sans-serif;
+    --filling-font: "Zalando Sans", sans-seri f;
 
     /* ----------Font Sizes---------- */
     --font-size-heading: clamp(2rem, 3vw, 5rem);
@@ -40,44 +42,13 @@ body {
     user-select: none;
 }
 
-#wht {
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 90px;
-    right: 40px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s ease-in-out;
-    z-index: 3;
-
-    &:hover {
-        box-shadow: 1px 1px 10px #00ff15;
-        scale: 1.2;
-    }
+/* img {
+    opacity: 0;
 }
 
-#wht a {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: #00ff15;
-    color: #FCE6E6;
-    text-decoration: none;
-}
-
-#wht a i {
-    color: gainsboro;
-    background-color: #00ff15;
-    font-size: 1.5rem;
-}
+img.loaded {
+    opacity: 1;
+} */
 
 /* ----------Section01---------- */
 #part01 {
@@ -89,7 +60,6 @@ body {
 
 #part01-txt {
     width: 100%;
-    /* padding-top: 150px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,9 +100,6 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    /* align-items: flex-end; */
-    /* padding: .5vw; */
-    /* border: 1px solid #111; */
 }
 
 #prt-02img {
@@ -146,7 +113,6 @@ body {
     width: 25vw;
     height: 35vh;
     align-self: flex-end;
-
 }
 
 #part02 {
@@ -239,7 +205,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    /* background-color: gray; */
 }
 
 #part04 h3 {
@@ -331,14 +296,12 @@ body {
     font-weight: 400;
 }
 
-/*=============== TESTIMONIAL CARD ===============*/
 #part05 {
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     padding-bottom: 4vh;
-
 }
 
 .testimonial__swiper {
@@ -395,7 +358,7 @@ body {
 
 .testimonial__stars i {
     font-size: 1rem;
-    color: #EE0100;
+    color: var(--primary-color);
 }
 
 .testimonial__number {
@@ -486,12 +449,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* gap: 10px; */
 }
 
 .prt06-info h5 {
     font-size: clamp(1rem, 1.5vw, 3rem);
-    /* margin-bottom: 20px; */
     font-family: var(--secondary-font);
     font-weight: 400;
 }
@@ -518,7 +479,8 @@ body {
 
     &:hover {
         opacity: 1;
-        background-color: var(--covering-color);
+        background-color: var(--primary-color);
+        border: 1px solid var(--primary-color);
     }
 
     &:hover i {
@@ -532,7 +494,6 @@ body {
 }
 
 .prt06-info p {
-    /* font-size: clamp(.8rem, 1.2vw, 1.5rem); */
     line-height: 1.5;
     font-family: var(--filling-font);
     font-weight: 300;
@@ -582,66 +543,9 @@ body {
 
 .prt07-container-img img {
     border-radius: 1vw;
-    /* width: 32vw; */
     height: 32vw;
     min-height: 18rem;
     margin: 0 1vw;
-}
-
-footer {
-    height: auto;
-    min-height: 35vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
-
-footer h3 {
-    font-size: var(--font-size-heading);
-    margin: 2vh 0;
-    margin-top: 7vh;
-    font-family: var(--secondary-font);
-    font-weight: 400;
-}
-
-#ftr-connect {
-    /* background-color: var(--secondary-color); */
-    margin-top: 1vh;
-
-}
-
-#ftr-connect a {
-    display: inline-block;
-    border-radius: 1vw;
-    border: 1px solid var(--covering-color);
-    opacity: .7;
-    text-decoration: none;
-    padding: 1vw;
-    margin: 0 .3vw;
-    transition: all ease-in .2s;
-
-    &:hover {
-        opacity: 1;
-        background-color: var(--covering-color);
-        box-shadow: 4px 4px 10px #0003;
-    }
-
-    &:hover i {
-        color: var(--spacing-color);
-    }
-}
-
-#ftr-connect a i {
-    /* background-color: #00ff15; */
-    font-size: 1.5vw;
-}
-
-footer p {
-    position: absolute;
-    bottom: 20px;
-    opacity: .7;
 }
 
 
@@ -695,32 +599,4 @@ footer p {
     .testimonial__number {
         font-size: var(--normal-font-size);
     }
-}
-
-/* ----------Common Classes----------- */
-.calcodesk-btn01 {
-    background-color: var(--primary-color);
-    cursor: pointer;
-    color: var(--spacing-color);
-    min-height: 40px;
-    min-width: 270px;
-    height: 2.5vw;
-    width: 20vw;
-    border-radius: 0.7rem;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2.5rem 0;
-    transition: all ease-in-out .2s;
-}
-
-.calcodesk-btn01:hover {
-    box-shadow: 1px 1px 10px var(--primary-color);
-}
-
-.calcodesk-btn01 i {
-    margin-left: 5px;
-    font-size: 1rem;
-    color: var(--spacing-color);
 }
