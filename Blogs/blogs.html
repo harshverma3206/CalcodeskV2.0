@@ -1,11 +1,213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Calcodesk-Blogs</title>
+    <!-- ----------Logo---------- -->
+    <link rel="icon" type="image/svg+xml" href="/Assests/LOGO/svg (4).svg" />
+
+    <!-- ----------Font Awesome---------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ----------- Google Fonts ---------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Unbounded:wght@200..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+    <!-- ----------Loco Motive CSS File---------- -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
+
+    <!-- ----------Other CSS Files---------- -->
+    <link rel="stylesheet" href="/Common CSS Files/navBar.css" />
+
+    <!-- ---------Main CSS File---------- -->
+    <link rel="stylesheet" href="blogs.css" />
+
 </head>
+
 <body>
-    
+    <main>
+        <div id="wht">
+            <a href="https://wa.me/+919208271937">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <header>
+            <nav>
+                <a href="/Home/index.html">
+                    <img src="/Assests/LOGO/svg (4).svg"></img>
+                </a>
+
+                <div class="navBar-options" id="menuList" id="menuPart">
+                    <a href="/Home/index.html" id="itemm">Home</a>
+                    <a href="/Store/Store.html">Store</a>
+                    <a href="/Blogs/blogs.html">Blogs</a>
+                    <a href="/Services/services.html">Services</a>
+                    <a href="/ContactUs/contact.html">Contact Us</a>
+                    <span class="clr1"></span>
+                </div>
+
+                <div class="menuIcon">
+                    <i class="fa-solid fa-bars-staggered" onclick="toggleMenu()"></i>
+                </div>
+            </nav>
+        </header>
+
+        <section>
+            <section class="part a">
+                <h3>Articles</h3>
+                <li> <a href="#sec01"> Meta Ads VS Google Ads </a></li>
+                <li> <a href="#sec02"> Why Every Business Needs a Website </a></li>
+                <li> <a href="#sec02"> How to Get Clients Without Paid Advertising </a></li>
+                <li> <a href="#sec03"> Top 5 Tools for Small Businesses </a></li>
+                <li> <a href="#sec04"> How This Boutique Attracted 100+ Clients </a></li>
+            </section>
+            <section class="part b">
+                <article id="sec01">
+                    <h2>Meta Ads VS Google Ads: Which One is Right for Your Business?</h2>
+
+                    <a href="/Home/index.html">
+                        <h5>By Calcodesk</h5>
+                    </a>
+
+                    <p>In today’s digital world, running ads is no longer a luxury — it’s a necessity. But the biggest
+                        question most business owners ask is: <br>
+                        Should I go with Meta Ads (Facebook & Instagram) or Google Ads?
+                        As a full-service digital agency, Calcodesk Services gets this question a lot — and today, we’re
+                        breaking it down for you in a simple, no-nonsense way.</p>
+
+                    <img src="/Assests/MetaData/Google vs Meta.webp" alt="">
+
+                    <h3>What are Meta Ads?</h3>
+
+                    <p>Meta Ads include advertising on Facebook, Instagram, Messenger, and other Meta platforms.</p>
+
+                    <h4>Best For:</h4>
+
+                    <li>Increasing brand awareness</li>
+                    <li>Getting engagement (likes, shares, comments)</li>
+                    <li>Driving traffic to your social media pages</li>
+                    <li>Retargeting interested customers</li>
+
+                    <h4>Key Features:</h4>
+
+                    <li>Visual-heavy (image, video, carousel)</li>
+                    <li>Extremely targeted audience (interests, behavior, demographics)</li>
+                    <li>Works well for B2C businesses, e-commerce, lifestyle brands, etc.</li>
+
+                    <h3>What are Google Ads?</h3>
+
+                    <p>Google Ads help you show up on the Google Search engine, YouTube, and websites that are part of
+                        the Google Display Network.</p>
+
+                    <h4>Best For:</h4>
+
+                    <li>Getting direct leads or sales</li>
+                    <li>Showing up when people search for your services</li>
+                    <li>Targeting based on keywords & intent</li>
+
+                    <h4>Key Features:</h4>
+
+                    <li>Search-based intent (people are already looking for you)</li>
+                    <li>Works well for local services, B2B, or urgent needs</li>
+                    <li>Offers high conversion rates for the right keywords</li>
+
+                    <h3>Meta Ads vs Google Ads: A Quick Comparison Table</h3>
+                    <div class="compare">
+                        <div>
+                            <h5>Feature</h5>
+                            <li>User Intent</li>
+                            <li>Cost per Click</li>
+                            <li>Targeting</li>
+                            <li>Best For</li>
+                            <li>Visuals</li>
+                            <li>Platforms</li>
+                        </div>
+
+                        <div>
+                            <h5>Meta Ads (Facebook/Instagram)</h5>
+                            <li>Low – Passive scrolling</li>
+                            <li>Lower (usually)</li>
+                            <li>Demographics, interests, behaviors</li>
+                            <li>Awareness, Engagement</li>
+                            <li>Strong visual creatives needed</li>
+                            <li>Facebook, Instagram, Messenger</li>
+                        </div>
+
+                        <div>
+                            <h5>Google Ads (Search/Display)</h5>
+                            <li>High – Actively searching</li>
+                            <li>Higher (for competitive keywords)</li>
+                            <li>Keywords, location, time, device</li>
+                            <li>Direct leads, sales</li>
+                            <li>Text ads + optional banners</li>
+                            <li>Google Search, YouTube, Display</li>
+                        </div>
+                    </div>
+
+                    <p>We believe that there’s no one-size-fits-all when it comes to advertising. That’s why our team
+                        first understands your business goals, target audience, and budget — then we recommend and
+                        execute the right strategy for maximum ROI.</p>
+
+                    <h4>Final Words</h4>
+                    <p>Whether it’s Google or Meta, the right ad platform can 10x your business if used wisely. But
+                        remember — success doesn’t just come from boosting a post or running a random keyword ad.
+                        It comes from strategy, targeting, creative, and continuous optimization.</p>
+
+                    <div class="blogHelp">
+                        <h4>Need Help with Ads?</h4>
+                        <p>At <span><a href="/Home/index.html"> Calcodesk Services</a></span>, we help startups, small
+                            businesses,
+                            and entrepreneurs build ROI-driven
+                            ad campaigns. <br> <span>
+                                <a href="/ContactUs/contact.html"> Book a free consultation</a></span> with us today!
+                        </p>
+                    </div>
+                </article>
+
+                <article id="sec02"></article>
+                <article id="sec03"></article>
+                <article id="sec04"></article>
+                <article id="sec05"></article>
+            </section>
+            <section class="part c"></section>
+        </section>
+
+        <footer>
+            <h3>Connect With Us</h3>
+            <article class="ftr-connect">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+            </article>
+            <p>© 2024 <b>Calcodesk</b> All rights reserved V25.2.1</p>
+        </footer>
+
+    </main>
 </body>
+
+<!-- ----------LocoMotive Script File---------- -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+
+<!-- ----------Other Script File---------- -->
+
+<!-- ----------GSAP Script File---------- -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+  integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+<!-- ----------Main Script File---------- -->
+<script src="blogs.js"></script>
+
 </html>

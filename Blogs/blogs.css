@@ -1,0 +1,229 @@
+/* ----------Define Global Variables---------- */
+:root {
+
+    /* ----------Colors---------- */
+    --primary-color: #EE0100;
+    --primary-color-opacity: #ee0000d4;
+    --primary-color-dark: #e20606;
+    --secondary-color: #F34444;
+    --covering-color: #310F11;
+    --covering-color-opacity: #310f1178;
+    --spacing-color: #FCE6E6;
+    --hightlight-color: #EDD8D8;
+    --extra-color: #EC565650;
+
+    /* ----------Fonts---------- */
+    --primary-font: "Abril Fatface", serif;
+    --secondary-font: "Unbounded", sans-serif;
+    --filling-font: "Zalando Sans", sans-seri f;
+
+    /* ----------Font Sizes---------- */
+    --font-size-heading: clamp(2rem, 3vw, 5rem);
+    --font-size-heading02: clamp(20px, 2vw, 2vw);
+    --font-size-small: 0.8rem;
+    --font-size-medium: clamp(13px, .8vw, 1vw);
+    --font-size-medium02: clamp(16px, .9vw, .9vw);
+    --font-size-large: clamp(20px, 1vw, 1.5vw);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    color: var(--covering-color);
+    font-family: var(--filling-font);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--spacing-color);
+    overflow-x: hidden;
+    user-select: none;
+}
+
+/* img {
+    opacity: 0;
+}
+
+img.loaded {
+    opacity: 1;
+} */
+
+.clr1 {
+    left: 35.03%;
+    width: 17.40%;
+}
+
+main>section {
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.a {
+    flex-grow: .1;
+    background-color: var(--hightlight-color);
+    padding: 2vw 0vw 0vw 2vw;
+}
+
+.a h3 {
+    margin-bottom: 20px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: var(--font-size-heading02);
+}
+
+.a li {
+    margin-left: 2vw;
+    font-size: var(--font-size-medium);
+    line-height: 1.5;
+    font-family: var(--filling-font);
+    font-weight: 300;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: all 0.2s ease;
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+.a li a {
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+        color: var(--primary-color);
+        opacity: 1;
+        font-weight: 500;
+    }
+}
+
+.b {
+    width: 1100px;
+    height: 100vh;
+    padding: 2vw;
+    padding-left: 3vw;
+    overflow: scroll;
+}
+
+.b article {
+    border-bottom: 2px solid #444;
+}
+
+.b h2 {
+    margin-bottom: 10px;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: var(--font-size-heading02);
+}
+
+.b a {
+    text-decoration: none;
+
+    &:hover h5 {
+        color: var(--primary-color);
+        opacity: 1;
+    }
+}
+
+.b h5 {
+    font-size: var(--font-size-large);
+    font-family: var(--filling-font);
+    opacity: .8;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.b p {
+    font-size: var(--font-size-medium02);
+    font-family: var(--filling-font);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 30px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.b img {
+    height: 20vw;
+    margin: 1vw auto;
+    display: block;
+    border-radius: 1vw;
+    margin-bottom: 30px;
+}
+
+.b h3 {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: clamp(1rem, 1.7vw, 3rem);
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.b h4 {
+    font-weight: 700;
+    font-size: var(--font-size-medium02);
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+
+.b li {
+    font-size: var(--font-size-medium02);
+    font-family: var(--filling-font);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: justify;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    line-height: 1.5;
+}
+
+.compare {
+    background-color: var(--hightlight-color);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 50px 20px;
+    border-radius: 1rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.compare div h5 {
+    margin-bottom: 20px;
+    opacity: 1;
+}
+
+.compare div li {}
+
+.blogHelp p span {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.blogHelp p span a {
+    color: var(--primary-color);
+    opacity: .8;
+    transition: all .3s ease;
+
+    &:hover {
+        opacity: 1;
+        padding: 0 1rem;
+        background-color: var(--primary-color);
+        color: var(--spacing-color);
+    }
+}
+
+.c {
+    flex-grow: 1;
+}
