@@ -66,7 +66,7 @@
                 <p>Write to us in case you have any doubts regarding the course, our services or in case
                     you want to get in touch for something specific. <span><b>We will get back to you
                             shortly!</b></span></p>
-                <form action="">
+                <form action="#">
                     <div id="inputGroup">
                         <div class="inputField">
                             <input type="text" placeholder="Your Name" required>
@@ -83,6 +83,31 @@
                             <i class="fa-solid fa-phone"></i>
                         </div>
 
+                        <div class="inputField" id="dropdown">
+                            <input type="text" placeholder="Subject" id="dropdownInput">
+                            <i class="fa-solid fa-angle-down"></i>
+                            <div class="options">
+                                <div onclick="show('Web Development')">
+                                    <option value="Web Development">Web Development</option>
+                                </div>
+                                <div onclick="show('App Development')">
+                                    <option onclick="show('App Development')" value="App Development">App Development</option>
+                                </div>
+                                <div onclick="show('Video Editing')">
+                                    <option value="Video Editing">Video Editing</option>
+                                </div>
+                                <div onclick="show('Graphic Designing')">
+                                    <option value="Graphic Designning">Graphic Designning</option>
+                                </div>
+                                <div onclick="show('Social Media Management')">
+                                    <option value="Social Media Management">Socia Media Management</option>
+                                </div>
+                                <div onclick="show('Digital Marketing')">
+                                    <option value="Digital Marketing">Digita Marketing</option>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div class="messageField">
                             <textarea placeholder="Your Message(optional)"></textarea>
                             <i class="fa-solid fa-message"></i>

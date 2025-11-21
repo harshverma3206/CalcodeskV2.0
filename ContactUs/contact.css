@@ -10,6 +10,8 @@
     --covering-color-opacity: #310f1178;
     --spacing-color: #FCE6E6;
     --hightlight-color: #EDD8D8;
+    --hightlight-color-dark:rgb(183, 154, 154);
+
     --extra-color: #EC565650;
 
     /* ----------Fonts---------- */
@@ -76,7 +78,7 @@ body {
     box-shadow: 0px 8px 16px var(--covering-color-opacity);
 }
 
-#part01 article p span b{
+#part01 article p span b {
     color: var(--primary-color);
 }
 
@@ -114,7 +116,6 @@ form {
 }
 
 #inputGroup {
-    /* background-color: rgb(178, 167, 103); */
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -122,7 +123,6 @@ form {
 }
 
 .inputField {
-    /* background-color: rgb(67, 179, 162); */
     position: relative;
 }
 
@@ -145,6 +145,37 @@ form {
     top: 27px;
 }
 
+.inputField .options {
+    position: absolute;
+    top: 65px;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    /* padding: 15px 15px 15px 45px; */
+    background-color: var(--spacing-color);
+    border: 2px solid transparent;
+    border-radius: .5vw;
+    font-size: .9rem;
+    display: none;
+    transition: all .3s ease;
+}
+
+.inputField .options option {
+    padding: 10px 0px;
+    padding-left: 25px;
+    border-radius: .5vw;
+    border-bottom: 1px solid var(--hightlight-color-dark);
+    cursor: pointer;
+
+    &:hover{
+        background-color: var(--hightlight-color);
+    }
+}
+
+#dropdown.active .options{
+    display: block;
+}
+
 input,
 textarea {
     width: 100%;
@@ -157,7 +188,7 @@ textarea {
 }
 
 textarea {
-    height: 200px;
+    height: 150px;
     resize: none;
 }
 

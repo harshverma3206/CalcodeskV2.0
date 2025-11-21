@@ -1,0 +1,91 @@
+/* ----------Define Global Variables---------- */
+:root {
+
+    /* ----------Colors---------- */
+    --primary-color: #EE0100;
+    --primary-color-opacity: #ee0000d4;
+    --primary-color-dark: #e20606;
+    --secondary-color: #F34444;
+    --covering-color: #310F11;
+    --covering-color-opacity: #310f1178;
+    --spacing-color: #FCE6E6;
+    --hightlight-color: #EDD8D8;
+    --extra-color: #EC565650;
+
+    /* ----------Fonts---------- */
+    --primary-font: "Abril Fatface", serif;
+    --secondary-font: "Unbounded", sans-serif;
+    --filling-font: "Zalando Sans", sans-serif;
+
+    /* ----------Font Sizes---------- */
+    --font-size-heading: clamp(2rem, 3vw, 5rem);
+    --font-size-small: 0.8rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    color: var(--covering-color);
+    font-family: var(--filling-font);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--spacing-color);
+    /* background-color: white; */
+    overflow-x: hidden;
+    user-select: none;
+}
+
+/* img {
+    opacity: 0;
+}
+
+img.loaded {
+    opacity: 1;
+} */
+
+/* ----------OverrideCSS---------- */
+.clr1 {
+    left: 17.70%;
+    width: 17.33%;
+}
+
+.calcodesk-btn01 {
+    min-width: 270px;
+    width: 25vw;
+}
+
+#part01 {
+    margin-top: 13vh;
+    height: 75vh;
+    width: 100%;
+    background-color: var(--hightlight-color);
+    padding: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#part01 h5 {
+    font-size: var(--font-size-heading);
+    margin: 2vh 0;
+    margin-top: 10vh;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+}
+
+#part01 p {
+    font-size: clamp(.8rem, 1.2vw, 5vw);
+    line-height: 1.5;
+    font-family: var(--filling-font);
+    font-weight: 300;
+    text-align: center;
+}
