@@ -66,6 +66,21 @@ img.loaded {
     justify-content: center;
 }
 
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 #part01-txt h1 {
     text-transform: uppercase;
     align-items: center;
@@ -75,6 +90,9 @@ img.loaded {
     letter-spacing: -3px;
     font-family: var(--primary-font);
     font-weight: 100;
+
+    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation-delay: 1.3s;
 }
 
 #part01-txt h1:nth-child(1) {
@@ -86,6 +104,20 @@ img.loaded {
     color: var(--secondary-color);
 }
 
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
 #part01-txt h5 {
     /* font-size: 1.13vw; */
     font-size: clamp(.8rem, 1vw, 2vw);
@@ -93,6 +125,9 @@ img.loaded {
     margin-top: 1.5rem;
     font-family: var(--secondary-font);
     font-weight: 300;
+
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation-delay: 1.3s;
 }
 
 #part01-img {

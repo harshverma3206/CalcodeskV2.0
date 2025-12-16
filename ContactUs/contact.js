@@ -1,3 +1,26 @@
+
+function show(value) {
+    const input = document.getElementById('dropdownInput');
+    console.log(input);
+    input.value = value;
+    console.log(input.value);
+    document.querySelector('.options').style.display = 'none';
+}
+
+const dropdownInput = document.getElementById('dropdownInput');
+dropdownInput.addEventListener('click', function () {
+    const options = document.querySelector('.options');
+    options.style.display = options.style.display === 'none' ? 'block' : 'none';
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function (event) {
+    const dropdown = document.getElementById('dropdown');
+    if (!dropdown.contains(event.target)) {
+        document.querySelector('.options').style.display = 'none';
+    }
+});
+
 function lazyLoading() {
     let allImg = document.querySelectorAll("img");
 
@@ -41,50 +64,7 @@ function nextSlide() {
     });
 }
 
-function dropdown() {
-    // function show(anything) {
-    //     const vl = document.querySelector('#dropdownInput').value = anything;
-    //     console.log(vl);
-    // }
-
-    // let dropdown = document.querySelector('#dropdown');
-    // dropdown.onclick = function () {
-    //     dropdown.classList.toggle('active');
-
-    // }
-
-}
 
 
-
-
-
-function holo() {
-    function show(value) {
-        const input = document.getElementById('dropdownInput');
-        input.value = value;
-        document.querySelector('.options').style.display = 'none';
-    }
-
-    // Toggle dropdown on input click
-    document.getElementById('dropdownInput').addEventListener('click', function () {
-        const options = document.querySelector('.options');
-        options.style.display = options.style.display === 'none' ? 'block' : 'none';
-    });
-
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function (event) {
-        const dropdown = document.getElementById('dropdown');
-        if (!dropdown.contains(event.target)) {
-            document.querySelector('.options').style.display = 'none';
-        }
-    });
-
-}
-
-
-
-holo();
 // lazyLoading();
 nextSlide();
-// dropdown();

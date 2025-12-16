@@ -84,14 +84,18 @@
                         </div>
 
                         <div class="inputField" id="dropdown">
-                            <input type="text" placeholder="Subject" id="dropdownInput">
+                            <input type="text" placeholder="Subject" id="dropdownInput" readonly>
                             <i class="fa-solid fa-angle-down"></i>
                             <div class="options">
+                                <div onclick="show('Consultation')">
+                                    <option value="Consultation">Consultation</option>
+                                </div>
                                 <div onclick="show('Web Development')">
                                     <option value="Web Development">Web Development</option>
                                 </div>
                                 <div onclick="show('App Development')">
-                                    <option onclick="show('App Development')" value="App Development">App Development</option>
+                                    <option onclick="show('App Development')" value="App Development">App Development
+                                    </option>
                                 </div>
                                 <div onclick="show('Video Editing')">
                                     <option value="Video Editing">Video Editing</option>
@@ -107,7 +111,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="messageField">
                             <textarea placeholder="Your Message(optional)"></textarea>
                             <i class="fa-solid fa-message"></i>

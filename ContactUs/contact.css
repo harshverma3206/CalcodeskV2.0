@@ -10,7 +10,7 @@
     --covering-color-opacity: #310f1178;
     --spacing-color: #FCE6E6;
     --hightlight-color: #EDD8D8;
-    --hightlight-color-dark:rgb(183, 154, 154);
+    --hightlight-color-dark: rgb(183, 154, 154);
 
     --extra-color: #EC565650;
 
@@ -145,13 +145,16 @@ form {
     top: 27px;
 }
 
+#dropdownInput {
+    cursor: pointer;
+}
+
 .inputField .options {
     position: absolute;
     top: 65px;
     overflow: hidden;
     z-index: 1;
     width: 100%;
-    /* padding: 15px 15px 15px 45px; */
     background-color: var(--spacing-color);
     border: 2px solid transparent;
     border-radius: .5vw;
@@ -163,16 +166,16 @@ form {
 .inputField .options option {
     padding: 10px 0px;
     padding-left: 25px;
-    border-radius: .5vw;
-    border-bottom: 1px solid var(--hightlight-color-dark);
     cursor: pointer;
+    transition: all .2s ease-out;
 
-    &:hover{
+    &:hover {
         background-color: var(--hightlight-color);
+        border-radius: .5vw;
     }
 }
 
-#dropdown.active .options{
+#dropdown.active .options {
     display: block;
 }
 
